@@ -13,7 +13,8 @@ Choice between the two options is made with inputing "Investment" or "Bond"
 
 #### Code
 
-`` import math ##This imports the necessary math functions that will be needed in this program
+``
+import math ##This imports the necessary math functions that will be needed in this program
 
 calculator_choice = input("What would you like to calculate today? Investment or Bond?: ")
 calculator_choice =  str.casefold(calculator_choice) ##casefold allows the for the input to be read no matter the case of the word that was entered.
@@ -47,4 +48,6 @@ if calculator_choice == "bond":
     bond_length = input("How many months are you planning to take to repay the bond? ")
     bond_length = int(bond_length)
     monthly_repayment = (monthly_interest * investment_amount) / (1 - (1 + monthly_interest ** (- bond_length)))
-    print(f"Your monthly repayment will be R{monthly_repayment} based on your investment amount, interest and length of the bond.")``
+    print(f"Your monthly repayment will be R{monthly_repayment} based on your investment amount, interest and length of the bond.")
+    
+    ``
