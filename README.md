@@ -5,6 +5,6 @@ This calculator detirmines ones return on a investment or it detirmines the requ
 
 *Dependencies*
 
-*Math library
+* Math library
 
 
