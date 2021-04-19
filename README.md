@@ -21,7 +21,9 @@ calculator_choice =  str.casefold(calculator_choice) ##casefold allows the for t
 
 ##The below detirmines through if function what type of investment will be made.
 ##Gathers the necessary information from the user for that calculation.
+
 if calculator_choice == "investment":
+    
     investment_amount = input("How much money are you going to be depositing? ")
     investment_amount = int(investment_amount)
     investment_interest = input("How much interest are your planning on earning? ")
@@ -30,16 +32,19 @@ if calculator_choice == "investment":
     investment_years = int(investment_years)
     interest_type = input("What type of interest would you like to earn? Simple or compound? ")
     interest_type = str.casefold(interest_type)
-    if interest_type == "simple":
+   
+   if interest_type == "simple":
         interest_earned = investment_amount* (1 + investment_interest * investment_years)
         print(interest_earned)
+    
     elif interest_type == "compound":
         interest_earned = investment_amount * math.pow((1 + investment_interest), investment_years)
         print(f"The mount of interest that your will earn based on what you invested and the period will be R{interest_earned}")
 
-##The below calculates that monthly cost if it was a bond investment and what the montly repayment
-##would be.
+##The below calculates that monthly cost if it was a bond investment and what the montly repayment would be.
+
 if calculator_choice == "bond":
+    
     investment_amount = input("How much money are you going to be depositing? ")
     investment_amount = int(investment_amount)
     investment_interest = input("How much is the interest? ")
@@ -47,6 +52,8 @@ if calculator_choice == "bond":
     monthly_interest = investment_interest/12
     bond_length = input("How many months are you planning to take to repay the bond? ")
     bond_length = int(bond_length)
+    
     monthly_repayment = (monthly_interest * investment_amount) / (1 - (1 + monthly_interest ** (- bond_length)))
+    
     print(f"Your monthly repayment will be R{monthly_repayment} based on your investment amount, interest and length of the bond.")
     ```
