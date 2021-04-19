@@ -56,4 +56,4 @@ if calculator_choice == "bond":
     monthly_repayment = (monthly_interest * investment_amount) / (1 - (1 + monthly_interest ** (- bond_length)))
     
     print(f"Your monthly repayment will be R{monthly_repayment} based on your investment amount, interest and length of the bond.")
-    ```
+    
