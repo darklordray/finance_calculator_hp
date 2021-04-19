@@ -1,2 +1,2 @@
 # finance_calculator_hp
-A simple finance calculator
+## A simple finance calculator
